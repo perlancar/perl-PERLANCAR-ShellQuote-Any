@@ -44,8 +44,8 @@ B<This distribution is currently For testing only.>
 
 =head2 shell_quote(@cmd) => str
 
-Quote command C<@cmd> according to C<$os> (defaults to C<$^O>). On Windows, will
-use L<Win32::ShellQuote>'s C<quote_system_string()>. Otherwise, will use
+Quote command C<@cmd> according to OS. On Windows, will use
+L<Win32::ShellQuote>'s C<quote_system_string()>. Otherwise, will use
 L<String::ShellQuote>'s C<shell_quote()>. Exported by default.
 
 If you want to simulate how quoting is done under another OS, you could do
